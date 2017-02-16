@@ -15,3 +15,4 @@ export class HeroDetailComponent {
         this.hero.name = name;
     }
 }
+
