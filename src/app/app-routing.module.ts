@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HeroComponent } from './hero/hero.component';
 
-import { CountdownComponent } from './countdown/countdown.component';
+import { CountdownLocalVarParentComponent } from './countdown/countdown-localvar-parent.component';
+import { CountdownViewChildParentComponent } from './countdown/countdown-viewchild-parent.component';
 
 const routes: Routes = [
-    { path: 'heroes', component: HeroComponent },
+    { path: 'heros', component: HeroComponent },
     { path: '', redirectTo: '/heros', pathMatch: 'full' },
-    { path: 'countdown', component: CountdownComponent }
+    { path: 'localvariable', component: CountdownLocalVarParentComponent },
+    { path: 'viewchild', component: CountdownViewChildParentComponent }
 
 ];
 

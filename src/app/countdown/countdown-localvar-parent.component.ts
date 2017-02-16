@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 //// Local variable, #timer, version
+//// If we put a *ngIf before countdown-timer this will not work
+
 @Component({
   moduleId: module.id,
   selector: 'countdown-parent-lv',
@@ -14,5 +16,9 @@ import { Component } from '@angular/core';
   styleUrls: ['countdown.css']
 })
 export class CountdownLocalVarParentComponent {
+
+  constructor() {
+    console.log('Parent constructor CountdownLocalVarParentComponent');
+  }
 
 }
